@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web &amp; Mobile Penetration Tester — Portfolio</title>
-<meta name="description" content="Independent web application and Android application penetration tester. Findings across IDOR, business logic, race conditions, authorization bypasses and more.">
+<title>Hazem Hossam — Web &amp; Android Penetration Tester</title>
+<meta name="description" content="Hazem Hossam Mohamed ALyassien — independent web application and Android application penetration tester and bug bounty hunter. 165+ valid reports: IDOR, business logic, race conditions, authorization bypasses and more.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128737;</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,15,20,.85
 .btn-primary:hover{background:#8f222c;transform:translateY(-2px)}
 .btn-outline{border-color:var(--border);color:var(--text)}
 .btn-outline:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
 .stat{background:var(--bg-alt);padding:22px 24px}
 .stat b{display:block;font-family:var(--mono);color:var(--accent);font-size:1.05rem;font-weight:600;margin-bottom:4px}
 .stat span{color:var(--muted);font-size:.86rem}
@@ -91,12 +91,15 @@ section{padding:80px 0;border-top:1px solid var(--border)}
 .report-table tbody tr:first-child td{border-top:none}
 .report-table tr:hover td{background:rgba(176,42,55,.08)}
 .report-table .cwe{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
-.report-table td:nth-child(3),.report-table th:nth-child(3){font-family:var(--mono);color:var(--text)}
-.report-table .bounty{font-family:var(--mono);color:var(--accent)}
+.report-table .num{font-family:var(--mono);color:var(--text);text-align:right;white-space:nowrap}
+.report-table th.num{text-align:right}
+.report-table .bounty{font-family:var(--mono);color:var(--accent);text-align:right;white-space:nowrap}
 .report-table .total-row td{color:var(--text);font-weight:600;border-top:2px solid var(--border);background:var(--bg-alt)}
 .table-note{color:var(--muted);font-size:.88rem;margin-top:16px}
-.sub-head{font-size:1.12rem;font-weight:700;margin:48px 0 14px}
-.mono-tag{display:block;font-family:var(--mono);font-size:.72rem;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
+.sub-head{font-size:.95rem;font-weight:700;color:var(--muted);margin:56px 0 16px}
+.mono-tag{display:block;font-family:var(--mono);font-size:1.45rem;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;line-height:1.2}
+.mono-tag small{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:1.5px}
+.h1-table{min-width:860px}
 .ywh-table{min-width:760px}
 .ywh-table td:first-child{color:var(--text);font-weight:600;white-space:nowrap}
 
@@ -105,6 +108,8 @@ section{padding:80px 0;border-top:1px solid var(--border)}
 .contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 .contact-links a{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-weight:500;color:var(--muted);transition:all .2s}
 .contact-links a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.contact-email{font-family:var(--mono);font-size:clamp(1.1rem,3vw,1.5rem);color:var(--accent);display:block;margin:0 auto 8px;width:fit-content}
+.contact-email:hover{text-decoration:underline}
 
 footer{padding:34px 0;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:.84rem}
 footer .mono{font-family:var(--mono)}
@@ -124,7 +129,7 @@ footer .mono{font-family:var(--mono)}
 
 <nav>
   <div class="nav-inner">
-    <a href="#" class="logo">sec<span>tester</span></a>
+    <a href="#" class="logo">hazem<span>bea</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -137,7 +142,7 @@ footer .mono{font-family:var(--mono)}
 
 <header class="hero container">
   <span class="tagline">&lt;/&gt; web &amp; mobile application security</span>
-  <h1>Security Researcher<br><em>Web &amp; Android Penetration Tester</em></h1>
+  <h1>Hazem Hossam<br><em>Web &amp; Android Penetration Tester</em></h1>
   <p class="sub">Independent security researcher and bug bounty hunter focused on finding the vulnerabilities that scanners miss — authentication flaws, business-logic abuse, race conditions and authorization bypasses — across web and Android applications, reported with clear, actionable proof.</p>
   <div class="cta-row">
     <a href="#contact" class="btn btn-primary">Get in touch</a>
@@ -145,8 +150,8 @@ footer .mono{font-family:var(--mono)}
   </div>
   <div class="stats reveal">
     <div class="stat"><b>165+ Valid Reports</b><span>Accepted vulnerabilities across public &amp; private programs</span></div>
-    <div class="stat"><b>$10k+ Bounties</b><span>Awarded across public bug bounty platforms</span></div>
-    <div class="stat"><b>High-Impact Bugs</b><span>Blind SSRF, IDOR, auth bypass and business logic</span></div>
+    <div class="stat"><b>$10k+ Bounties</b><span>Awarded across HackerOne &amp; YesWeHack</span></div>
+    <div class="stat"><b>SSRF @ Meta</b><span>Blind SSRF identified in Facebook's /tr/ endpoint</span></div>
     <div class="stat"><b>All Bug Classes</b><span>IDOR, business logic, race conditions, XSS, CSRF and more</span></div>
   </div>
 </header>
@@ -180,7 +185,7 @@ footer .mono{font-family:var(--mono)}
       <div class="tl-item">
         <div class="tl-date">2025 — Present</div>
         <h3>Freelance Web Application Penetration Tester / Bug Bounty Hunter</h3>
-        <div class="org">Public &amp; private bug bounty programs</div>
+        <div class="org">HackerOne &amp; YesWeHack — public and private programs</div>
         <ul>
           <li>Comprehensive web application security assessments across public and private bug bounty programs.</li>
           <li>Numerous valid vulnerabilities reported across different targets and asset types.</li>
@@ -188,6 +193,10 @@ footer .mono{font-family:var(--mono)}
           <li>Specialized in business-logic vulnerabilities leading to authorization, financial and workflow bypasses.</li>
           <li>Responsible disclosure coordination with program owners and fix verification.</li>
         </ul>
+        <div class="tl-links">
+          <a href="https://hackerone.com/hazembea?type=user" target="_blank" rel="noopener">HackerOne profile &#8599;</a>
+          <a href="https://yeswehack.com/hunters/hazembea" target="_blank" rel="noopener">YesWeHack profile &#8599;</a>
+        </div>
       </div>
     </div>
   </div>
@@ -196,60 +205,58 @@ footer .mono{font-family:var(--mono)}
 <section id="findings">
   <div class="container">
     <span class="sec-label">// track record</span>
-    <h2 class="sec-title">Verifiable results</h2>
+    <h2 class="sec-title">Public, verifiable results</h2>
     <p class="table-lead">Accepted vulnerability reports across HackerOne and YesWeHack — every class of bug, from access control and business logic to race conditions.</p>
-    <h3 class="sub-head"><span class="mono-tag">HackerOne</span>Vulnerability class breakdown</h3>
-    <p class="table-note" style="margin:-10px 0 18px">A sample of my findings: a blind SSRF (validated via Burp Collaborator), dozens of IDORs exposing other users' data and PII, business-logic flaws enabling privilege escalation and financial manipulation, race conditions, and stored / reflected XSS.</p>
+    <h3 class="sub-head"><span class="mono-tag">HackerOne <small>&middot; hazembea</small></span>Vulnerability class breakdown</h3>
+    <p class="table-note" style="margin:-10px 0 18px">A part of my findings on HackerOne: a blind SSRF in Facebook's /tr/ endpoint (validated via Burp Collaborator), 45 IDORs exposing other users' data and PII, business-logic flaws enabling privilege escalation and financial manipulation, race conditions, and stored / reflected XSS.</p>
     <div class="table-wrap reveal">
-      <table class="report-table">
+      <table class="report-table h1-table">
         <thead>
-          <tr><th>Vulnerability Class</th><th>CWE</th><th>Bounties</th></tr>
+          <tr><th>Vulnerability Class</th><th>CWE</th><th class="num">Reports</th><th class="num">Bounties</th><th class="num">Critical</th><th class="num">Reputation</th></tr>
         </thead>
         <tbody>
-          <tr><td>Insecure Direct Object Reference (IDOR)</td><td class="cwe">CWE-639</td><td class="bounty">$4,295</td></tr>
-          <tr><td>Business Logic Errors</td><td class="cwe">CWE-840</td><td class="bounty">$550</td></tr>
-          <tr><td>Race Condition (Shared Resource Synchronization)</td><td class="cwe">CWE-362</td><td class="bounty">$250</td></tr>
-          <tr><td>Improper Authorization</td><td class="cwe">CWE-285</td><td>&mdash;</td></tr>
-          <tr><td>Basic XSS</td><td class="cwe">CWE-80</td><td>&mdash;</td></tr>
-          <tr><td>Cross-Site Request Forgery (CSRF)</td><td class="cwe">CWE-352</td><td>&mdash;</td></tr>
-          <tr><td>Client-Side Enforcement of Server-Side Security</td><td class="cwe">CWE-602</td><td>&mdash;</td></tr>
-          <tr><td>Improper Input Validation</td><td class="cwe">CWE-20</td><td class="bounty">$500</td></tr>
-          <tr><td>Improper Access Control &ndash; Generic</td><td class="cwe">CWE-284</td><td class="bounty">$30</td></tr>
-          <tr><td>Improper Authentication &ndash; Generic</td><td class="cwe">CWE-287</td><td class="bounty">$1</td></tr>
-          <tr><td>XSS &ndash; Stored</td><td class="cwe">CWE-79</td><td>&mdash;</td></tr>
-          <tr><td>Insufficient Session Expiration</td><td class="cwe">CWE-613</td><td>&mdash;</td></tr>
-          <tr><td>Time-of-check Time-of-use (TOCTOU) Race Condition</td><td class="cwe">CWE-367</td><td>&mdash;</td></tr>
-          <tr><td>Improper Enforcement of a Single, Unique Action</td><td class="cwe">CWE-837</td><td class="bounty">$100</td></tr>
-          <tr><td>Improper Restriction of Authentication Attempts</td><td class="cwe">CWE-307</td><td>&mdash;</td></tr>
-          <tr><td>XSS &ndash; Generic</td><td class="cwe">CWE-79</td><td>&mdash;</td></tr>
-          <tr><td>XSS &ndash; Reflected</td><td class="cwe">CWE-79</td><td>&mdash;</td></tr>
-          <tr class="total-row"><td>Total</td><td class="cwe"></td><td class="bounty">$5,726+</td></tr>
+          <tr><td>Insecure Direct Object Reference (IDOR)</td><td class="cwe">CWE-639</td><td class="num">45</td><td class="bounty">$5,900</td><td class="num">0</td><td class="num">312</td></tr>
+          <tr><td>Business Logic Errors</td><td class="cwe">CWE-840</td><td class="num">28</td><td class="bounty">$800</td><td class="num">0</td><td class="num">80</td></tr>
+          <tr><td>Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)</td><td class="cwe">CWE-362</td><td class="num">24</td><td class="bounty">$250</td><td class="num">0</td><td class="num">46</td></tr>
+          <tr><td>Improper Authorization</td><td class="cwe">CWE-285</td><td class="num">17</td><td class="num">&mdash;</td><td class="num">0</td><td class="num">&mdash;</td></tr>
+          <tr><td>Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)</td><td class="cwe">CWE-80</td><td class="num">6</td><td class="num">&mdash;</td><td class="num">0</td><td class="num">11</td></tr>
+          <tr><td>Improper Access Control &ndash; Generic</td><td class="cwe">CWE-284</td><td class="num">5</td><td class="bounty">$30</td><td class="num">0</td><td class="num">22</td></tr>
+          <tr><td>Cross-Site Request Forgery (CSRF)</td><td class="cwe">CWE-352</td><td class="num">5</td><td class="num">&mdash;</td><td class="num">0</td><td class="num">7</td></tr>
+          <tr><td>Client-Side Enforcement of Server-Side Security</td><td class="cwe">CWE-602</td><td class="num">5</td><td class="num">&mdash;</td><td class="num">0</td><td class="num">&mdash;</td></tr>
+          <tr><td>Improper Input Validation</td><td class="cwe">CWE-20</td><td class="num">5</td><td class="bounty">$500</td><td class="num">1</td><td class="num">22</td></tr>
+          <tr><td>Improper Authentication &ndash; Generic</td><td class="cwe">CWE-287</td><td class="num">3</td><td class="bounty">$1</td><td class="num">0</td><td class="num">24</td></tr>
+          <tr><td>Cross-site Scripting (XSS) &ndash; Stored</td><td class="cwe">CWE-79</td><td class="num">3</td><td class="num">&mdash;</td><td class="num">0</td><td class="num">2</td></tr>
+          <tr><td>Server-Side Request Forgery (SSRF)</td><td class="cwe">CWE-918</td><td class="num">3</td><td class="num">&mdash;</td><td class="num">0</td><td class="num">-5</td></tr>
+          <tr><td>Insufficient Session Expiration</td><td class="cwe">CWE-613</td><td class="num">2</td><td class="num">&mdash;</td><td class="num">1</td><td class="num">&mdash;</td></tr>
+          <tr><td>Time-of-check Time-of-use (TOCTOU) Race Condition</td><td class="cwe">CWE-367</td><td class="num">2</td><td class="num">&mdash;</td><td class="num">0</td><td class="num">&mdash;</td></tr>
+          <tr><td>Incorrect Authorization</td><td class="cwe">CWE-863</td><td class="num">2</td><td class="num">&mdash;</td><td class="num">1</td><td class="num">&mdash;</td></tr>
+          <tr class="total-row"><td>Total</td><td class="cwe">15 classes</td><td class="num">155</td><td class="bounty">$7,481</td><td class="num">3</td><td class="num">521</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="table-note">Plus: a blind SSRF (validated via Burp Collaborator) and SSTI findings with full PoCs and remediation guidance.</p>
+    <p class="table-note">155 reports across 15 vulnerability classes &mdash; $7,481 in bounties, including a blind SSRF in Facebook's /tr/ endpoint (validated via Burp Collaborator), plus SSTI findings with full PoCs and remediation guidance. Full track record on <a href="https://hackerone.com/hazembea?type=user" target="_blank" rel="noopener" style="color:var(--accent)">HackerOne &#8599;</a></p>
 
-    <h3 class="sub-head"><span class="mono-tag">YesWeHack</span>Program results</h3>
-    <p class="table-note" style="margin:-10px 0 18px">A sample of my findings: improper access control letting one customer act on another's account, BOLA on a chat API disclosing group members, an authentication bypass on a user management API, an OTP verification bypass, and an SSRF exposing internal services.</p>
+    <h3 class="sub-head"><span class="mono-tag">YesWeHack <small>&middot; hazembea</small></span>Program results</h3>
+    <p class="table-note" style="margin:-10px 0 18px">A part of my findings on YesWeHack: improper access control letting one customer act on another's PostNord account, BOLA on Oviva's chat API disclosing group members, an authentication bypass on iLOQ's user management API, an OTP verification bypass on MakeMyTrip, and an SSRF in Swapcard exposing internal services.</p>
     <div class="table-wrap reveal">
       <table class="report-table ywh-table">
         <thead>
-          <tr><th>Program</th><th>Reports</th><th>Crit</th><th>High</th><th>Med</th><th>Low</th><th>Points</th><th>Rewards</th></tr>
+          <tr><th>Program</th><th class="num">Reports</th><th class="num">Crit</th><th class="num">High</th><th class="num">Med</th><th class="num">Low</th><th class="num">Points</th><th class="num">Rewards</th></tr>
         </thead>
         <tbody>
-          <tr><td>Site 1 (Business Portal)</td><td>12</td><td>0</td><td>2</td><td>9</td><td>1</td><td>122</td><td class="bounty">&euro;2,000</td></tr>
-          <tr><td>Site 2 (Health App)</td><td>8</td><td>0</td><td>3</td><td>5</td><td>0</td><td>45</td><td class="bounty">&euro;1,100</td></tr>
-          <tr><td>Site 3 (Retail App)</td><td>3</td><td>0</td><td>2</td><td>0</td><td>1</td><td>23</td><td class="bounty">&euro;350</td></tr>
-          <tr><td>Site 4 (IoT Access)</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>13</td><td class="bounty">&euro;350</td></tr>
-          <tr><td>Site 5 (Health Platform)</td><td>2</td><td>0</td><td>1</td><td>0</td><td>1</td><td>5</td><td class="bounty">&euro;100</td></tr>
-          <tr><td>Site 6 (Travel)</td><td>4</td><td>0</td><td>1</td><td>2</td><td>1</td><td>2</td><td class="bounty">$100</td></tr>
-          <tr><td>Site 7 (Event App)</td><td>3</td><td>0</td><td>0</td><td>3</td><td>0</td><td>7</td><td class="bounty">&euro;65</td></tr>
-          <tr><td>Site 8 (Cloud Services)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>12</td><td class="bounty">&euro;50</td></tr>
-          <tr class="total-row"><td>Total</td><td>34</td><td>0</td><td>10</td><td>19</td><td>5</td><td>229</td><td class="bounty">&euro;4,015 + $100</td></tr>
+          <tr><td>Business Customer Portal (PostNord)</td><td class="num">12</td><td class="num">0</td><td class="num">2</td><td class="num">9</td><td class="num">1</td><td class="num">122</td><td class="bounty">&euro;2,000</td></tr>
+          <tr><td>Oviva AG</td><td class="num">8</td><td class="num">0</td><td class="num">3</td><td class="num">5</td><td class="num">0</td><td class="num">45</td><td class="bounty">&euro;1,100</td></tr>
+          <tr><td>Supercard.ch</td><td class="num">3</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td class="num">23</td><td class="bounty">&euro;350</td></tr>
+          <tr><td>iLOQ</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">13</td><td class="bounty">&euro;350</td></tr>
+          <tr><td>Doctolib</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">5</td><td class="bounty">&euro;100</td></tr>
+          <tr><td>MakeMyTrip</td><td class="num">4</td><td class="num">0</td><td class="num">1</td><td class="num">2</td><td class="num">1</td><td class="num">2</td><td class="bounty">$100</td></tr>
+          <tr><td>Swapcard</td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td class="num">0</td><td class="num">7</td><td class="bounty">&euro;65</td></tr>
+          <tr><td>Infomaniak</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">12</td><td class="bounty">&euro;50</td></tr>
+          <tr class="total-row"><td>Total</td><td class="num">34</td><td class="num">0</td><td class="num">10</td><td class="num">19</td><td class="num">5</td><td class="num">229</td><td class="bounty">&euro;4,015 + $100</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="table-note">Severity counts per program dashboard: Critical / High / Medium / Low.</p>
+    <p class="table-note">Severity counts per program dashboard: Critical / High / Medium / Low. Full history verified on my <a href="https://yeswehack.com/hunters/hazembea" target="_blank" rel="noopener" style="color:var(--accent)">YesWeHack hunter profile &#8599;</a></p>
   </div>
 </section>
 
@@ -257,16 +264,20 @@ footer .mono{font-family:var(--mono)}
   <div class="container">
     <span class="sec-label">// contact</span>
     <h2 class="sec-title">Let's secure your application</h2>
-    <p class="lead">Running a web application without regular security testing? I'm available for freelance and contract engagements. Reach out through your preferred channel and let's talk scope.</p>
+    <p class="lead">Running a web application without regular security testing? I'm available for freelance and contract engagements. Reach out and let's talk scope.</p>
+    <a href="mailto:520hazem@gmail.com" class="contact-email">520hazem@gmail.com</a>
+    <p style="color:var(--muted);margin-bottom:34px">WhatsApp: +20 120 524 4380</p>
     <div class="contact-links">
-      <a href="#findings">View track record</a>
+      <a href="https://hackerone.com/hazembea?type=user" target="_blank" rel="noopener">HackerOne</a>
+      <a href="https://yeswehack.com/hunters/hazembea" target="_blank" rel="noopener">YesWeHack</a>
+      <a href="https://linkedin.com/in/hazem-hossam-87a64b262" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <span class="mono">sectester</span> — Web &amp; Android Penetration Tester
+    <span class="mono">hazembea</span> — Hazem Hossam Mohamed ALyassien · Web &amp; Android Penetration Tester
   </div>
 </footer>
 
